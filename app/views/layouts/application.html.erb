@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= yield %>
     <div id="container">
       <div id="theTarget">
         <div class="image1"></div>
@@ -21,6 +22,5 @@
         <div class="image5"></div>
       </div>
     </div>
-    <%= yield %>
   </body>
 </html>
