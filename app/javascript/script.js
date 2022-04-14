@@ -7,7 +7,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).on('turbolinks:load',function () {
   $("#theTarget").skippr({
     transition :'slide',
     speed: 1000,
